@@ -4,7 +4,6 @@ api.use(express.json());
 const PORT = 1993;
 const {v4: uuidv4} = require ('uuid');
 const codeWave_dataBase = require ('mysql2');
-const { resolveSoa } = require('dns');
 
 const sql = codeWave_dataBase.createConnection({
     host: "localhost",
